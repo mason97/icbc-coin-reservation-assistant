@@ -1,44 +1,30 @@
-# 工行预约助手 - Chrome Extension
+# 工行预约助手 - Chrome Extension | ICBC Coin Reservation Assistant
 
-ICBC Coin Reservation Assistant - Chrome Extension
+<div align="center">
+
+**[中文](#中文) | [English](#english)**
+
+</div>
 
 ---
 
-## 项目介绍 | Project Description
+## <a name="中文"></a> 中文
 
-### 中文
+### 项目介绍
 
 **工行预约助手** 是一个Chrome浏览器扩展插件，专门用于自动化填写工商银行纪念币预约表单。
 
-**解决什么问题？**
+#### 解决什么问题？
 - 每次预约纪念币时，需要反复输入相同的个人信息（姓名、身份证号、手机号等）
 - 手动填写耗时且容易出错
 - 预约高峰期，手动填写速度慢可能错过预约机会
 
-**本项目通过以下方式解决：**
+#### 本项目通过以下方式解决：
 - 在Chrome扩展中配置个人信息
 - 在预约页面一键自动填充所有表单字段
 - 大幅提高填写速度和准确性
 
----
-
-### English
-
-**ICBC Coin Reservation Assistant** is a Chrome browser extension designed to automate the form filling process for Industrial and Commercial Bank of China (ICBC) coin reservation.
-
-**What problem does it solve?**
-- Each time reserving commemorative coins, you need to repeatedly input the same personal information (name, ID number, phone number, etc.)
-- Manual filling is time-consuming and prone to errors
-- During peak reservation periods, slow manual filling may cause you to miss reservation opportunities
-
-**This project solves this by:**
-- Configuring personal information in the Chrome extension
-- One-click auto-fill of all form fields on the reservation page
-- Greatly improving filling speed and accuracy
-
----
-
-## 功能特性 | Features
+### 功能特性
 
 - ✨ UI界面配置管理
 - 💾 数据持久化存储（Chrome Storage）
@@ -47,11 +33,7 @@ ICBC Coin Reservation Assistant - Chrome Extension
 - ⚡ 快速切换用户
 - 🎨 简洁直观的界面设计
 
----
-
-## 安装方法 | Installation
-
-### 中文
+### 安装方法
 
 1. 下载或克隆项目到本地
    ```bash
@@ -70,30 +52,7 @@ ICBC Coin Reservation Assistant - Chrome Extension
 
 6. 扩展安装完成！
 
-### English
-
-1. Download or clone the project to your local machine
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Open Chrome browser and go to Extensions page
-   - Enter in address bar: `chrome://extensions/`
-   - Or click Menu > More Tools > Extensions
-
-3. Enable "Developer mode" in the top right corner
-
-4. Click "Load unpacked"
-
-5. Select the project folder `icbc-coin-reservation-assistant`
-
-6. Extension installed successfully!
-
----
-
-## 使用教程 | Usage Guide
-
-### 中文
+### 使用教程
 
 #### 第一步：配置用户信息
 
@@ -135,9 +94,88 @@ ICBC Coin Reservation Assistant - Chrome Extension
 
 5. 检查表单内容，确认无误后提交
 
+### 注意事项
+
+- ⚠️ 本工具仅用于自动化填写表单，不绕过任何验证机制
+- ⚠️ 请确保填写的信息准确无误
+- ⚠️ 使用前请在配置页面正确设置所有必填信息
+- ⚠️ 建议在正式预约前先进行测试
+
+### 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+### 许可证
+
+本项目仅供学习和个人使用。
+
+### 更新日志
+
+#### v1.0
+- ✨ 初始版本
+- ✨ UI界面配置管理
+- ✨ 多用户支持
+- ✨ 一键自动填充
+
+### 联系方式
+
+如有问题，请提交 Issue。
+
+### 免责声明
+
+本工具旨在提高用户填写表单的效率，请合理使用并遵守相关网站的使用条款。使用者应自行承担使用本工具的责任。
+
 ---
 
-### English
+<p align="right"><a href="#top">返回顶部</a></p>
+
+---
+
+## <a name="english"></a> English
+
+### Project Description
+
+**ICBC Coin Reservation Assistant** is a Chrome browser extension designed to automate the form filling process for Industrial and Commercial Bank of China (ICBC) coin reservation.
+
+#### What problem does it solve?
+- Each time reserving commemorative coins, you need to repeatedly input the same personal information (name, ID number, phone number, etc.)
+- Manual filling is time-consuming and prone to errors
+- During peak reservation periods, slow manual filling may cause you to miss reservation opportunities
+
+#### This project solves this by:
+- Configuring personal information in the Chrome extension
+- One-click auto-fill of all form fields on the reservation page
+- Greatly improving filling speed and accuracy
+
+### Features
+
+- ✨ UI interface for configuration management
+- 💾 Data persistence storage (Chrome Storage)
+- 👥 Multiple users support
+- 🚀 One-click auto-fill form
+- ⚡ Quick user switching
+- 🎨 Clean and intuitive interface design
+
+### Installation
+
+1. Download or clone the project to your local machine
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Open Chrome browser and go to Extensions page
+   - Enter in address bar: `chrome://extensions/`
+   - Or click Menu > More Tools > Extensions
+
+3. Enable "Developer mode" in the top right corner
+
+4. Click "Load unpacked"
+
+5. Select the project folder `icbc-coin-reservation-assistant`
+
+6. Extension installed successfully!
+
+### Usage Guide
 
 #### Step 1: Configure User Information
 
@@ -179,87 +217,58 @@ ICBC Coin Reservation Assistant - Chrome Extension
 
 5. Review the form content and submit after confirming it's correct
 
----
-
-## 项目结构 | Project Structure
-
-```
-icbc-coin-reservation-assistant/
-├── manifest.json          # Chrome扩展配置文件
-├── popup.html             # 扩展弹窗界面
-├── popup.js               # 弹窗逻辑（注入主程序）
-├── options.html           # 配置页面
-├── options.js             # 配置页面逻辑
-├── config/
-│   └── defaults.json      # 默认配置
-└── README.md              # 本文档
-```
-
----
-
-## 技术说明 | Technical Notes
-
-- **Manifest Version**: Chrome Extension Manifest V3
-- **Storage**: Chrome Storage API (chrome.storage.sync)
-- **Script Injection**: chrome.scripting.executeScript
-- **Permissions**: activeTab, scripting, storage
-
----
-
-## 注意事项 | Important Notes
-
-### 中文
-
-- ⚠️ 本工具仅用于自动化填写表单，不绕过任何验证机制
-- ⚠️ 请确保填写的信息准确无误
-- ⚠️ 使用前请在配置页面正确设置所有必填信息
-- ⚠️ 建议在正式预约前先进行测试
-
-### English
+### Important Notes
 
 - ⚠️ This tool is for automating form filling only and does not bypass any verification mechanisms
 - ⚠️ Please ensure all information entered is accurate
 - ⚠️ Make sure to properly set all required information in the configuration page before use
 - ⚠️ Testing before the actual reservation is recommended
 
----
-
-## 贡献 | Contributing
-
-欢迎提交 Issue 和 Pull Request！
+### Contributing
 
 Issues and Pull Requests are welcome!
 
----
-
-## 许可证 | License
-
-本项目仅供学习和个人使用。
+### License
 
 This project is for educational and personal use only.
 
----
+### Changelog
 
-## 更新日志 | Changelog
+#### v1.0
+- ✨ Initial version
+- ✨ UI interface for configuration management
+- ✨ Multiple users support
+- ✨ One-click auto-fill
 
-### v1.0
-- ✨ 初始版本
-- ✨ UI界面配置管理
-- ✨ 多用户支持
-- ✨ 一键自动填充
-
----
-
-## 联系方式 | Contact
-
-如有问题，请提交 Issue。
+### Contact
 
 If you have any questions, please submit an Issue.
 
----
-
-**免责声明 | Disclaimer**
-
-本工具旨在提高用户填写表单的效率，请合理使用并遵守相关网站的使用条款。使用者应自行承担使用本工具的责任。
+### Disclaimer
 
 This tool is designed to improve efficiency in filling out forms. Please use it reasonably and comply with the terms of use of the relevant websites. Users should bear their own responsibility for using this tool.
+
+---
+
+## Project Structure
+
+```
+icbc-coin-reservation-assistant/
+├── manifest.json          # Chrome extension configuration file
+├── popup.html             # Extension popup interface
+├── popup.js               # Popup logic (injection script)
+├── options.html           # Configuration page
+├── options.js             # Configuration page logic
+├── config/
+│   └── defaults.json      # Default configuration
+└── README.md              # This document
+```
+
+## Technical Notes
+
+- **Manifest Version**: Chrome Extension Manifest V3
+- **Storage**: Chrome Storage API (chrome.storage.sync)
+- **Script Injection**: chrome.scripting.executeScript
+- **Permissions**: activeTab, scripting, storage
+
+<p align="right"><a href="#top">返回顶部 | Back to Top</a></p>
