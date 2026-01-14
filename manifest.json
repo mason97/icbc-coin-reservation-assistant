@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "工行纪念币预约助手",
+  "description": "ICBC Coin Reservation Assistant - 自动填充工商银行纪念币预约表单",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
